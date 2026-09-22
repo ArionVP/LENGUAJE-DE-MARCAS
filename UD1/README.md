@@ -28,7 +28,9 @@ sudo apt install git
 ```
 4. Crear repositorio, añadir código y hacer commit
 ```bash
-
+git init
+git add
+git commit -m "Comentario Descriptivo"
 ```
 ## Plugins Instalados en VS Code
 |Plugins|Para que sirven|Imágenes|

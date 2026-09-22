@@ -26,7 +26,10 @@ Lenguaje de marcas: Organiza información mediante una sintaxis basada en marcas
 ```bash
 sudo apt install git
 ```
-  
+4. Crear repositorio, añadir código y hacer commit
+```bash
+
+```
 ## Plugins Instalados en VS Code
 |Plugins|Para que sirven|Imágenes|
 |-------|---------------|--------|

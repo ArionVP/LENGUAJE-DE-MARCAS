@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>EJEMPLO MAPA</title>  
+  </head>
+  <body>
+        <img src="imagenes/map_area.png" width="650" height="480" usemap="#mapa_zonas" />
+
+        <map name="mapa_zonas">
+            <area shape="rect" coords="35,35,255,105" href="rectangulo.html" />
+            <area shape="circle" coords="500,400,200" href="circulo.html" />
+            <area shape="rect" coords="360,35,615,220" href="cuadrado.html" />
+            <area shape="poly" coords="90,25,162,26,163,96,89,25" href="triangulo.html" />
+        </map>
+  </body>
+</html>

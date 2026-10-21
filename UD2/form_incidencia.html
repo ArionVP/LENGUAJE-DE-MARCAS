@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario de incidencia</title>  
+  </head>
+  <body>
+        <form action="incidencia.php" method="get">
+            <fieldset>
+                <legend>Datos del Usuario</legend>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Nombre y apellidos" maxlength="20" size="20"/>
+                <br>
+                <input type="radio" name="rol" value="alumno"/>Alumno</input>
+                <br>
+                <input type="radio" name="rol" value="profesor"/>Profesor</input>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dónde se produce</legend>
+                <input type="radio" name="lugar" value="departamento"/>Todo el departamento</input>
+                <br>
+                <input type="radio" name="lugar" value="aula"/>Todo el aula</input>
+                <br>
+                <input type="radio" name="lugar" value="equipo" checked/>Sólo en un equipo</input>
+                <br>
+                <label for="identificador">Identifica el dpto, aula o equipo</label>
+                <input type="text" id="identificador name="identificador" maxlength="20" size="20"/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre la incidencia</legend>
+                <textarea name="comentario" rows="7" cols="60" placeholder="Describe el problema con detalle"></textarea>
+                <br>
+                Nivel de urgencia:
+                <br>
+                <input type="radio" name="nivel" value="alto"/>Alto</input>
+                <br>
+                <input type="radio" name="nivel" value="medio">Medio</input>
+                <br>
+                <input type="radio" name="nivel" value="bajo"/>Bajo</input>
+                <br>
+                <label for="caja">Me gustaría ser avisado por email cuando se resuelva la incidencia</label>
+                <input type="checkbox" id="caja" name="caja" value="on"> 
+            </fieldset>
+
+            <input type="submit" value="Entrar"/>
+            <input type="reset" value="Limpiar"/>
+        </form>
+  </body>
+</html>
